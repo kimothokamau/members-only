@@ -1,7 +1,11 @@
 <section class="section">
   <div class="container">
     <div class="columns">
-      <%= render 'active-rooms' %>
+      <% if user_signed_in? %>
+        <%= render 'profile' %>
+      <% else %>
+        <%= render 'active-rooms' %>
+      <% end %>
       <%= render 'feed' %>
       <%= render 'topics' %>
 

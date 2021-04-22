@@ -26,8 +26,10 @@ Un-authenticated users should see posts but not the authors of the posts.
 
 - Run this command in your OS terminal: `git clone git@github.com:kimothokamau/twitter-clone.git` to get a local copy of the project.
 - Navigate to the project directory
+- Run `git checkout feature`
 - Run `npm install` or `yarn`
 - Run `bundle install --without production`
+- Run `  rails webpacker:install`
 - Run `rails db:create` and `rails db:migrate` to create a DB and migrate it to rails resepectively
 - Run `rails server`
 - Open the localhost https://127.0.0.1:3000/ to signup a new user
